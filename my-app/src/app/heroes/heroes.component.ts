@@ -14,16 +14,10 @@ export class HeroesComponent implements OnInit {
               , private messageService: MessageService) 
   {
 
-   }
+  }
 
   ngOnInit() {
     this.getHeroes();
-  }
-
-  onSelect(hero: Hero): void{
-    this.messageService.add('HeroesComponent: onSelect event fired');
-    this.selectedHero = hero;
-  
   }
 
   getHeroes(): void{
